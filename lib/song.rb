@@ -47,7 +47,7 @@ class Song
     @@all.sort_by {|obj| obj.name}
   end 
   
-  def selfnew_from_filename(file)
+  def self.new_from_filename(file)
     #song = self.new
     #@artist_name = file.split("-")[0]
     #@name = file.split("-")[1]
