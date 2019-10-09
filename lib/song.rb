@@ -55,10 +55,9 @@ class Song
     song = self.new 
     
     song.name = song_array[1].chomp(".mp3")
-    @artist_name = song_array[0]
-    #binding.pry
-    
-    song
+    song.artist_name = song_array[0]
+
+    song 
   end 
 
 end
