@@ -49,9 +49,9 @@ class Song
   end 
   
   def self.new_from_filename(file)
-    song = self.new
+    
     song_array = file.split(" - ")
-    song_second_array = file_song_name.split(".")[0].to_s
+    song_second_array = song_array.chomp
     @name = song_name
     @artist_name = file.split(" - ")[0].to_s
     #binding.pry
