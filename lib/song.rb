@@ -48,9 +48,9 @@ class Song
     @@all.sort_by {|obj| obj.name}
   end 
   
-  def self.new_from_filename(file)
+  def self.new_from_filename(file_name)
     
-    song_array = file.split(" - ")
+    song_array = file_name.split(" - ")
     
     song = self.new 
     
@@ -60,5 +60,7 @@ class Song
     song 
   end 
   
-  def 
+  def self.create_from_filename(file_name)
+    song_obj = self.new_from_filename(file_name)
+    @@all<< song_obj
 end
