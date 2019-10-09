@@ -54,7 +54,7 @@ class Song
     song_name = file_song_name.split(".")[0]
     @name = song_name
     @artist_name = file.split(" - ")[0]
-    binding.pry
+    #binding.pry
   end 
 
 end
