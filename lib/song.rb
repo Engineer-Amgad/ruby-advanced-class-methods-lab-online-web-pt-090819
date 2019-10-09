@@ -51,12 +51,11 @@ class Song
   def self.new_from_filename(file)
     
     song_array = file.split(" - ")
-    song_second_array = song_array.chomp(".mp3")
     
     song = self.new 
     
-    song.name = song_
-    @artist_name = file.split(" - ")[0].to_s
+    song.name = song_array[1].chomp(".mp3")
+    @artist_name = song_array[0]
     #binding.pry
     
     song
