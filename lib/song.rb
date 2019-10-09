@@ -55,7 +55,7 @@ class Song
     
     song = self.new 
     
-    @name = song_name
+    song.name = song_
     @artist_name = file.split(" - ")[0].to_s
     #binding.pry
     
