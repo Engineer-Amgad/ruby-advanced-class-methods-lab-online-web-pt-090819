@@ -64,4 +64,8 @@ class Song
     song_obj = self.new_from_filename(file_name)
     @@all<< song_obj
   end
+  
+  def self.destroy_all
+    self.all.clear
+  end 
 end
