@@ -63,4 +63,5 @@ class Song
   def self.create_from_filename(file_name)
     song_obj = self.new_from_filename(file_name)
     @@all<< song_obj
+  end
 end
